@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>LiningStarz</title>
-  
+  <%= display_meta_tags :og => {:site => @meta_site_name, :title => "#{@meta_title} | #{@meta_subtitle}", :description => @meta_description, :keywords => @meta_keywords, :type => @meta_type, :url => request.original_url, :prev => "#{request.referer}", image: @meta_image} %>  
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>

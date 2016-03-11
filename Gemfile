@@ -58,3 +58,4 @@ gem 'letter_opener', group: :development
 gem 'carrierwave'
 gem 'carrierwave-aws'
 gem 'rmagick', require: 'RMagick'
+gem 'meta-tags'
