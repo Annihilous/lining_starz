@@ -55,3 +55,6 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
 gem 'jquery-turbolinks'
 gem 'letter_opener', group: :development
+gem 'carrierwave'
+gem 'carrierwave-aws'
+gem 'rmagick', require: 'RMagick'
