@@ -7,31 +7,17 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "#"} Brand
-    / Collect the nav links, forms, and other content for toggling
+      = link_to root_url, class: "navbar-brand" do
+        .fa.fa-star
+
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
-        %li.active
-          %a{:href => "#"}
-            Link
-            %span.sr-only (current)
         %li
-          %a{:href => "#"} Link
-        %li.dropdown
-          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            Dropdown
-            %span.caret
-          %ul.dropdown-menu
-            %li
-              %a{:href => "#"} Action
-            %li
-              %a{:href => "#"} Another action
-            %li
-              %a{:href => "#"} Something else
+          = link_to "About", about_path
+        %li
+          = link_to "Contact Us", contact_path
+        %li
+          = link_to "Dance", dance_path
+
       %ul.nav.navbar-nav.navbar-right
-        - if user_signed_in?
-          %li= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "nav-link"
-        - else
-          %li= link_to "Sign in", new_user_registration_path, class: "nav-link"
-    / /.navbar-collapse
-  / /.container-fluid
+        

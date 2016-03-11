@@ -13,6 +13,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    .text-center= render 'layouts/alerts'
-    %div= render 'layouts/navigation'
+    .text-center
+      = render 'layouts/alerts'
+    = render 'layouts/navigation'
     = yield
+    = render 'layouts/footer'

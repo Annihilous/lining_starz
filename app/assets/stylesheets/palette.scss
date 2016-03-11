@@ -1,2 +1,8 @@
-$color_primary: #cccccc;
+$color_primary: rgb(49, 128, 255);
 $color_primary_dark: darken($color_primary, 10%);
+
+$color_secondary: rgb(117, 114, 154);
+$color_secondary_dark: darken($color_secondary, 10%);
+
+$color_light: white;
+$color_light_dark: darken($color_light, 10%);

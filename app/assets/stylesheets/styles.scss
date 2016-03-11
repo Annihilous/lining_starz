@@ -1,28 +1,108 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import 'palette';
 
-
 html, body, input, button, select, textarea, optgroup, option, form, fieldset, table, i, b, p, a, li, tr, td, h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .display-none {
   display: none;
 }
 
-.no_padding_or_margin {
-  padding: 0px;
-  margin: 0px;
-}
-
 .pad {
   padding: 20px 20px;
 }
 
-.background-white {
-  background-color: white;
+.pad-section {
+  padding: 100px 0px;
 }
 
-.btn {
-  border-radius: 2px;
+.text-light {
+  color: $color_light;
+}
+
+.text-primary {
+  color: $color_primary;
+}
+
+.text-secondary {
+  color: $color_secondary;
+}
+
+.background-light {
+  background-color: $color_light;
+}
+
+.background-primary {
+  background-color: $color_primary;
+}
+
+.background-secondary {
+  background-color: $color_secondary;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+.header-wrapper {
+  padding: 60px 0px;
+}
+
+#index {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#index-view-port {
+  min-height: 600px;
+}
+
+footer {
+  background-color: $color_secondary;
+}
+
+footer p {
+  margin: 0px;
+  padding: 40px 0px;
+  color: $color_light;
+}
+
+footer a p:hover {
+  color: $color_light_dark;
+}
+
+/*
+########   ######      #######  ##     ## ######## ########  ########  #### ########  ########  ######  
+##     ## ##    ##    ##     ## ##     ## ##       ##     ## ##     ##  ##  ##     ## ##       ##    ## 
+##     ## ##          ##     ## ##     ## ##       ##     ## ##     ##  ##  ##     ## ##       ##       
+########   ######     ##     ## ##     ## ######   ########  ########   ##  ##     ## ######    ######  
+##     ##       ##    ##     ##  ##   ##  ##       ##   ##   ##   ##    ##  ##     ## ##             ## 
+##     ## ##    ##    ##     ##   ## ##   ##       ##    ##  ##    ##   ##  ##     ## ##       ##    ## 
+########   ######      #######     ###    ######## ##     ## ##     ## #### ########  ########  ######  
+*/
+
+/*NAVIGATION*/
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  background-color: $color_primary;
+  border-color: $color_primary; 
+}
+
+.navbar-default .navbar-brand {
+  color: $color_light;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: $color_light;
 }
