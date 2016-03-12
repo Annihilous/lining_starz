@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0px;
 }
 
+h1 {
+  font-size: 72px;
+}
+
 .display-none {
   display: none;
 }
@@ -46,21 +50,37 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: $color_secondary;
 }
 
-h1 {
-  font-size: 72px;
+.container-md {
+  max-width: 700px;
 }
 
-.header-wrapper {
-  padding: 60px 0px;
+.background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#index {
+.background-image-fixed {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+.background-tint {
+  background-color: rgba(0, 0, 0, 0.6)
+}
+
 #index-view-port {
   min-height: 600px;
+}
+
+#about-content {
+  float: right;
+  padding: 50px;
+  margin: 50px 20px;
+}
+
+#contact-wrapper {
+  padding: 50px 0px 50px 0px;
+  background-color: #cccccc;
 }
 
 footer {
@@ -87,6 +107,16 @@ footer a p:hover {
 ########   ######      #######     ###    ######## ##     ## ##     ## #### ########  ########  ######  
 */
 
+.alert {
+  margin-bottom: 0px; 
+  border: none; 
+  border-radius: 0px; 
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
 /*NAVIGATION*/
 
 .navbar {
@@ -105,4 +135,19 @@ footer a p:hover {
 
 .navbar-default .navbar-nav>li>a {
   color: $color_light;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn-primary {
+  background-color: $color_primary;
+  border: none;
+  padding: 20px 60px;
+  font-size: 20px;
+  &:hover {
+    background-color: white;
+    color: $color_primary;
+  }
 }

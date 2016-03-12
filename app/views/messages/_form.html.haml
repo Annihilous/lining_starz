@@ -1,0 +1,14 @@
+= simple_form_for(@message) do |f|
+  = f.error_notification
+
+  .form-inputs
+    .form-group
+      = f.input :name, input_html: { class: "form-control" }
+    .form-group
+      = f.input :email, input_html: { class: "form-control" }
+    .form-group
+      = f.input :description, label: 'Message', input_html: { class: "form-control" }
+
+  %br
+  .form-actions.text-right
+    = f.button :submit, value: 'Send', class: "btn btn-primary"

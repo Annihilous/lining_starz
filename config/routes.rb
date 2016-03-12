@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
+  resources :messages, except: [:new]
+
+  get 'messages/new', path: 'contact', as: 'contact'
+
   devise_for :users, controllers: { sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords' }
 
   get 'pages/about', path: 'about', as: 'about'
-  get 'pages/contact', path: 'contact', as: 'contact'
   get 'pages/dance', path: 'dance', as: 'dance'
   get 'pages/codex', path: 'codex', as: 'codex'
 
