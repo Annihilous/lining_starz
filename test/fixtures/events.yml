@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  start_dts: 2016-03-13 18:50:19
+  end_dts: 2016-03-13 18:50:19
+  address_id: MyString
+  contact_id: MyString
+  slug: MyString
+
+two:
+  name: MyString
+  description: MyText
+  start_dts: 2016-03-13 18:50:19
+  end_dts: 2016-03-13 18:50:19
+  address_id: MyString
+  contact_id: MyString
+  slug: MyString

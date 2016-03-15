@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :events
   resources :messages, except: [:new]
 
   get 'messages/new', path: 'contact', as: 'contact'
