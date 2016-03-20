@@ -1,11 +1,17 @@
 Rails.application.routes.draw do
 
-  resources :events
-  resources :messages, except: [:new]
+  devise_for :users, controllers: { sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords' }
+
+  constraints(:subdomain => 'admin') do
+    resources :events,
+              controller: "admin_facing/events"
+    resources :messages,
+              except: [:new, :create, :edit, :upfate]
+    get 'dashboard', controller: 'admin_facing/pages', as: 'admin_dashboard'
+  end
 
   get 'messages/new', path: 'contact', as: 'contact'
-
-  devise_for :users, controllers: { sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords' }
+  resources :messages, only: [:create]
 
   get 'pages/about', path: 'about', as: 'about'
   get 'pages/dance', path: 'dance', as: 'dance'

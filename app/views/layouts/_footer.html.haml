@@ -1,9 +1,9 @@
 %footer
   .container
     .text-right
-      - if user_signed_in?
+      - if current_user
         = link_to destroy_user_session_path, :method => :delete, class: "nav-link" do
-          %p.fa.fa-cancel
+          %p.fa.fa-sign-out
       - else
-        = link_to new_user_registration_path, class: "nav-link" do
+        = link_to new_user_session_path, class: "nav-link" do
           %p.fa.fa-star

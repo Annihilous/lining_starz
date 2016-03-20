@@ -18,6 +18,13 @@
           = link_to "Contact Us", contact_path
         %li
           = link_to "Dance", dance_path
-
-      %ul.nav.navbar-nav.navbar-right
-        
+      - if current_user && current_user.is_admin
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            = link_to "Admin Dashboard", admin_dashboard_url
+          %li
+            = link_to edit_user_registration_path, class: "nav-link" do
+              .fa.fa-gear
+          %li
+            = link_to destroy_user_session_path, :method => :delete, class: "nav-link" do
+              .fa.fa-sign-out
