@@ -1,4 +1,21 @@
 .pad-section.background-light
   .container
     .text-center.text-primary.background-light
-      %h1 Admin Dashboard
+      %h1
+        Admin Dashboard
+
+    .pad
+      %h3 Messages
+      %br
+      %table
+        %tr
+          %td Name
+          %td Email
+          %td Message
+        
+
+        / - @messages.each do | mes |
+        /   %tr
+        /     %td= mes.name
+        /     %td= mes.email
+        /     %td= mes.description

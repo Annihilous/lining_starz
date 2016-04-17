@@ -2,7 +2,16 @@ class AdminFacingController < ApplicationController
 	before_action :authenticate_user!
 	before_action :_ensure_user_is_admin
 
-  def admin_dashboard
+	def dashbaord
+    raise "foo"
+    @var = "foo"
+    @messages = Message.all
+  end
+
+  def admin_dashbaord
+    raise "foo"
+    @var = "foo"
+    @messages = Message.all
   end
 
 	private
